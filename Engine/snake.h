@@ -1,7 +1,7 @@
 #pragma once
 
 #include "Board.h"
-#inlcude "Location.h"
+#include "Location.h"
 
 class Snake {
 
