@@ -9,10 +9,12 @@ private:
 	class Segment {
 
 	public: 
-		void Init(Location loc) 
-		{ 
-			
-		}
+		void Init(const Location& loc);
+		void InitBody();
+		void Follow(const Segment& next);
+		void MoveBy(const Location& delts_loc);
+		void Draw(Board& brd) const;
+		
 	private:
 		Location myLoc;
 		Color myColor;
@@ -24,6 +26,8 @@ public:
 
 //Modifier
 	void MoveBy(const Location & delta_loc);
+	void Grow();
+	void Draw(Board& brd) const;
 
 //Accessor
 
